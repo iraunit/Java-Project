@@ -37,7 +37,7 @@ public class DashBoard extends JFrame implements ActionListener {
         frame.setBounds(100, 100, 1037, 637);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(null);
-
+        frame.setTitle("Welcome To RV Group Of Hotels");
         JButton btnNewButton = new JButton("Reception");
         btnNewButton.setFont(new Font("Consolas", Font.BOLD, 25));
         btnNewButton.setBounds(126, 165, 300, 50);

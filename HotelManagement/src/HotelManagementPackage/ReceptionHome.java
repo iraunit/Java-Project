@@ -20,7 +20,7 @@ public class ReceptionHome extends JFrame implements ActionListener {
         contentPane = new JPanel();
         setContentPane(contentPane);
         contentPane.setLayout(null);
-
+        setTitle("Reception");
         ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource(""));
         Image i3 = i1.getImage().getScaledInstance(500, 500, Image.SCALE_DEFAULT);
         ImageIcon i2 = new ImageIcon(i3);
