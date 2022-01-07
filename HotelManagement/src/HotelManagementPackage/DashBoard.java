@@ -1,6 +1,8 @@
 package HotelManagement.src.HotelManagementPackage;
 
 import javax.swing.*;
+import javax.swing.border.SoftBevelBorder;
+import javax.swing.border.StrokeBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -19,12 +21,14 @@ public class DashBoard extends JFrame implements ActionListener {
         JButton btnNewButton = new JButton("Reception");
         btnNewButton.setFont(new Font("Consolas", Font.BOLD, 25));
         btnNewButton.setBounds(126, 165, 300, 50);
+        btnNewButton.setBorder(BorderFactory.createRaisedSoftBevelBorder());
         frame.getContentPane().add(btnNewButton);
         btnNewButton.addActionListener((ActionListener)this );
         JButton btnAddEmployee = new JButton("Add Employee");
         btnAddEmployee.setFont(new Font("Consolas", Font.BOLD, 25));
         btnAddEmployee.setBounds(619, 165, 300, 50);
         frame.getContentPane().add(btnAddEmployee);
+        btnAddEmployee.setBorder(BorderFactory.createRaisedSoftBevelBorder());
         btnAddEmployee.addActionListener((ActionListener)this );
         JButton btnAddRooms = new JButton("Add Rooms");
         btnAddRooms.setFont(new Font("Consolas", Font.BOLD, 25));

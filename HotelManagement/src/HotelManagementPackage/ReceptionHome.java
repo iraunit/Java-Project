@@ -29,7 +29,7 @@ public class ReceptionHome extends JFrame implements ActionListener {
         l1.setBounds(220,5,750,430);
         contentPane.add(l1);
 
-        JButton btnNewCustomerForm = new JButton("New Customer Form");
+        JButton btnNewCustomerForm = new JButton("New Guest Entry");
         btnNewCustomerForm.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try{
@@ -46,7 +46,7 @@ public class ReceptionHome extends JFrame implements ActionListener {
         btnNewCustomerForm.setForeground(Color.WHITE);
         contentPane.add(btnNewCustomerForm);
 
-        JButton btnNewButton = new JButton("Room");
+        JButton btnNewButton = new JButton("All Room Data");
         btnNewButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
                 try{
@@ -89,7 +89,7 @@ public class ReceptionHome extends JFrame implements ActionListener {
 
         contentPane.add(btnNewButton_2);
 
-        JButton btnNewButton_3 = new JButton("Customer Info");
+        JButton btnNewButton_3 = new JButton("Guests Info");
         btnNewButton_3.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try{
