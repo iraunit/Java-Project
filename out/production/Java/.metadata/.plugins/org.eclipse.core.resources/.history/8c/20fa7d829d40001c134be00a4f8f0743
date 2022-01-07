@@ -1,0 +1,24 @@
+package HotelManagementPackage;
+import javax.swing.*;
+public class HotelManagement extends JFrame{
+
+	HotelManagement(){
+		setSize(1440,600);
+		setTitle("Hotel Management");
+		setLocation(50,100);
+		ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("icons/hotel.jpg"));
+		JLabel l1=new JLabel(i1);
+		l1.setBounds(0,0,1920,1080);
+		add(l1);
+		setLayout(null);
+		
+		
+		setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		
+		new HotelManagement();
+	}
+
+}

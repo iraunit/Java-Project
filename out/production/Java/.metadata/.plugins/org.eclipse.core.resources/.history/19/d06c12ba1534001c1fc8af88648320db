@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+import javax.print.DocFlavor.BYTE_ARRAY;
+
+public class JavaAssignment {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		//byte data type
+		System.out.println("Enter byte data: ");
+		byte a=s.nextByte();
+		
+		//wrapping around Byte object
+		Byte byteobjByte= new Byte(a);
+	}
+
+}

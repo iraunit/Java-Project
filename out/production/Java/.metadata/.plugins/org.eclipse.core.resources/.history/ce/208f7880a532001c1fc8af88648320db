@@ -1,0 +1,19 @@
+
+public class program15 {
+	enum studentType {UG,PhD,PG};
+	public void mainn(String [] args) {
+		studentType type=studentType.PhD;
+		switch(type) {
+		case UG:
+		case PG:
+			System.out.println("Choice is UG or PG");
+			break;
+		case PhD:
+			System.out.println("No covered in PhD");
+			break;
+			default:
+				System.out.println("Hello");
+				break;
+		}
+	}
+}

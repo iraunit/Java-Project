@@ -1,0 +1,34 @@
+import java.security.DrbgParameters.NextBytes;
+import java.util.Scanner;
+
+import javax.print.DocFlavor.INPUT_STREAM;
+import javax.swing.InputMap;
+
+//import com.sun.jdi.Value;
+
+public class ClassTwo {
+	
+	enum studentType {UG, PG, PhD}; 
+	
+	public static void main(String args []) {
+		studentType type1= studentType.PG;
+		studentType type2= studentType.UG;
+		studentType type3= studentType.PhD;
+		if(type1.equals(type2)) {
+			System.out.println("Both Students belong to same branch");
+		}
+		else {
+			System.out.println("Both Student belong to Different Branch");
+		}
+		System.out.println("This is the test Stri\bng");
+		System.out.println("This is the r string\r hello world");
+		
+		int value=23;
+		int twiceValue=value>>2;
+		System.out.println(twiceValue);
+		Scanner sc= new Scanner(System.in);
+		Byte a= sc.nextByte();
+		Byte byteobjByte = new Byte(a);
+	}
+
+}

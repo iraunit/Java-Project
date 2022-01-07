@@ -1,0 +1,56 @@
+package HotelManagementPackage;
+import javax.swing.*;
+import java.awt.*;
+import javax.swing.plaf.FontUIResource;
+public class HotelManagement extends JFrame{
+
+	HotelManagement(){
+		setSize(1440,600);
+		setTitle("Hotel Management");
+		setLocation(50,100);
+		ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("icons/hotel.jpg"));
+		JLabel l1=new JLabel(i1);
+		l1.setBounds(0,0,1920,1080);
+		add(l1);
+		JLabel l2=new JLabel("RV Group Of Hotels");
+		l2.setBounds(10,200,1000,1000);
+		l2.setForeground(Color.WHITE);
+		l2.setFont(new Font("serif",Font.PLAIN,60));
+		l1.add(l2);
+		
+		JButton b1=new JButton("Continue");
+		b1.setForeground(Color.WHITE);
+		b1.setBackground(Color.BLACK);
+		b1.setBounds(500,200,200,100);
+		b1.setFont(new Font("serif",Font.PLAIN,30));
+		l1.add(b1);
+		setLayout(null);
+		setVisible(true);
+		while(true) {
+			l2.setVisible(false);
+			try {
+				Thread.sleep(500);
+			}
+			catch(Exception e) {
+				
+			}
+			l2.setVisible(true);
+			try {
+				Thread.sleep(500);
+			}
+			catch(Exception e) {
+				
+			}
+		}
+		
+		
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		new HotelManagement();
+	}
+
+}

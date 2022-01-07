@@ -1,0 +1,21 @@
+package HotelManagementPackage;
+
+import javax.swing.*;
+import java.awt.*;
+public class rohit extends JFrame {
+    rohit(){
+    	setBounds(400, 200, 1200, 500);
+    	getContentPane().setBackground(Color.WHITE);//To set location and dimension of frame
+    	setLayout(null);
+    	ImageIcon loginImg = new ImageIcon(ClassLoader.getSystemResource("icons/gate.png"));
+    	JLabel lab1 = new JLabel(loginImg);
+    	lab1.setBounds(0, 0, 600, 500);
+    	add(lab1);
+    	setVisible(true);
+    }
+	public static void main(String[] args) {
+		
+         new rohit();
+	}
+
+}

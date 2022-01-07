@@ -1,0 +1,24 @@
+
+class StudentInfo{
+	String name;
+	int rollNo;
+	String branch;
+}
+class UGStudentsInfo extends StudentInfo {
+	
+}
+
+class PGStudentsInfo extends StudentInfo {
+	
+}
+public class Inheritance {
+	
+	
+	
+	public static void main(String[] args) {
+		UGStudentsInfo ug1=new UGStudentsInfo();
+		PGStudentsInfo pg1=new PGStudentsInfo();
+		
+	}
+
+}

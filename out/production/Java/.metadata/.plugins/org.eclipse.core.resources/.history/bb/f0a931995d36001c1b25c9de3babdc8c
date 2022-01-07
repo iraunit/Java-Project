@@ -1,0 +1,16 @@
+
+public class StringClass {
+	static int abc;
+	public static void main(String[] args) {
+//		String a="HEk";
+//		a="cout";
+//		System.out.println(a);
+//		char data[]= {'a','c','d'};
+//		String str=new String(data);
+//		System.out.println(str.toUpperCase());
+//		StringBuffer buffer=new StringBuffer("This is");
+//		System.out.println("Buffer Capacity is: "+buffer.capacity());
+		abc=324;
+		System.out.println(abc);
+}
+}
