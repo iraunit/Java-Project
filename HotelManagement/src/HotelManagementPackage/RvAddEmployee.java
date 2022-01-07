@@ -19,6 +19,13 @@ public class RvAddEmployee extends JFrame{ //Third Frame
         getContentPane().setBackground(Color.WHITE);
         setTitle("ADD EMPLOYEE DETAILS");
 
+//        ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource("HotelManagement/src/icons/customer.jpg"));
+//        Image i3 = i1.getImage().getScaledInstance(500, 400,Image.SCALE_DEFAULT);
+//        ImageIcon i2 = new ImageIcon(i3);
+//        JLabel l1 = new JLabel(i2);
+//        l1.setBounds(480,10,300,500);
+//        add(l1);
+
         setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         setSize(778,486);
         getContentPane().setLayout(null);
@@ -120,7 +127,7 @@ public class RvAddEmployee extends JFrame{ //Third Frame
         add(AddPassengers);
 
 
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource(""));
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("HotelManagement/src/icons/employee.jpg"));
         Image i3 = i1.getImage().getScaledInstance(500, 500,Image.SCALE_DEFAULT);
         ImageIcon i2 = new ImageIcon(i3);
         JLabel image = new JLabel(i2);

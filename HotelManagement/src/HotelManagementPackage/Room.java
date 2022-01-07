@@ -41,17 +41,17 @@ public class Room extends JFrame implements ActionListener{
     public Room() throws SQLException {
         //conn = Javaconnect.getDBConnection();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setBounds(450, 200, 1100, 600);
+        setBounds(450, 200, 1040, 500);
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         setContentPane(contentPane);
         contentPane.setLayout(null);
 
-        ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource(""));
-        Image i3 = i1.getImage().getScaledInstance(600, 600,Image.SCALE_DEFAULT);
+        ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource("HotelManagement/src/icons/room.jpg"));
+        Image i3 = i1.getImage().getScaledInstance(500, 400,Image.SCALE_DEFAULT);
         ImageIcon i2 = new ImageIcon(i3);
         JLabel l1 = new JLabel(i2);
-        l1.setBounds(500,0,600,600);
+        l1.setBounds(520,0,500,500);
         add(l1);
 
         loadData(contentPane);

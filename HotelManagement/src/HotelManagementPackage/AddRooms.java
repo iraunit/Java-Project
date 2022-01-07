@@ -22,7 +22,12 @@ public class AddRooms extends JFrame implements ActionListener {
         l10.setBounds(194, 10, 120, 22);
         contentPane.add(l10);
 
-
+        ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource("HotelManagement/src/icons/room.jpg"));
+        Image i3 = i1.getImage().getScaledInstance(600, 400,Image.SCALE_DEFAULT);
+        ImageIcon i2 = new ImageIcon(i3);
+        JLabel l110 = new JLabel(i2);
+        l110.setBounds(370,00,600,400);
+        add(l110);
 
         JLabel l1 = new JLabel("Room Number");
         l1.setForeground(new Color(25, 25, 112));

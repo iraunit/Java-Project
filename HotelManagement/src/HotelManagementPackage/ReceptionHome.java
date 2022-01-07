@@ -16,17 +16,17 @@ public class ReceptionHome extends JFrame implements ActionListener {
 
     public ReceptionHome(){
 
-        setBounds(530, 200, 650, 470);
+        setBounds(530, 200, 1050, 470);
         contentPane = new JPanel();
         setContentPane(contentPane);
         contentPane.setLayout(null);
         setTitle("Reception");
-        ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource(""));
+        ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource("HotelManagement/src/icons/reception.jpg"));
         Image i3 = i1.getImage().getScaledInstance(500, 500, Image.SCALE_DEFAULT);
         ImageIcon i2 = new ImageIcon(i3);
         JLabel l1 = new JLabel(i2);
-        l1.setBounds(250,30,500,470);
-        add(l1);
+        l1.setBounds(0,10,500,500);
+        contentPane.add(l1);
 
         JButton btnNewCustomerForm = new JButton("New Customer Form");
         btnNewCustomerForm.addActionListener(new ActionListener() {
