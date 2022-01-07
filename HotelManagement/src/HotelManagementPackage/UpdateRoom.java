@@ -46,17 +46,17 @@ public class UpdateRoom extends JFrame {
     public UpdateRoom() throws SQLException {
         //conn = Javaconnect.getDBConnection();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setBounds(530, 200, 1000, 450);
+        setBounds(530, 200, 900, 380);
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         setContentPane(contentPane);
         contentPane.setLayout(null);
 
-        ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource(""));
+        ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource("HotelManagement/src/icons/updateroom.jpg"));
         Image i3 = i1.getImage().getScaledInstance(550, 250,Image.SCALE_DEFAULT);
         ImageIcon i2 = new ImageIcon(i3);
         JLabel l1 = new JLabel(i2);
-        l1.setBounds(400,80,600,250);
+        l1.setBounds(300,60,600,250);
         add(l1);
 
         JLabel lblUpdateRoomStatus = new JLabel("Update Room Status");
@@ -65,7 +65,7 @@ public class UpdateRoom extends JFrame {
         contentPane.add(lblUpdateRoomStatus);
 
         JLabel lblNewLabel = new JLabel("Guest ID:");
-        lblNewLabel.setBounds(27, 87, 90, 14);
+        lblNewLabel.setBounds(27, 60, 90, 14);
         contentPane.add(lblNewLabel);
 
         c1 = new Choice();
@@ -80,26 +80,26 @@ public class UpdateRoom extends JFrame {
         contentPane.add(c1);
 
         JLabel lblAvailability = new JLabel("Availability:");
-        lblAvailability.setBounds(27, 187, 90, 14);
+        lblAvailability.setBounds(27, 165, 90, 14);
         contentPane.add(lblAvailability);
 
         JLabel lblCleanStatus = new JLabel("Clean Status:");
-        lblCleanStatus.setBounds(27, 240, 90, 14);
+        lblCleanStatus.setBounds(27, 200, 90, 14);
         contentPane.add(lblCleanStatus);
 
 
         txt_Ava = new JTextField();
-        txt_Ava.setBounds(160, 184, 140, 20);
+        txt_Ava.setBounds(160, 165, 140, 20);
         contentPane.add(txt_Ava);
         txt_Ava.setColumns(10);
 
         txt_Status = new JTextField();
-        txt_Status.setBounds(160, 237, 140, 20);
+        txt_Status.setBounds(160, 200, 140, 20);
         contentPane.add(txt_Status);
         txt_Status.setColumns(10);
 
         txt_Room = new JTextField();
-        txt_Room.setBounds(160, 130, 140, 20);
+        txt_Room.setBounds(160, 133, 140, 20);
         contentPane.add(txt_Room);
         txt_Room.setColumns(10);
 
@@ -129,7 +129,7 @@ public class UpdateRoom extends JFrame {
                 }
             }
         });
-        b1.setBounds(120, 315, 89, 23);
+        b1.setBounds(120, 240, 89, 23);
         b1.setBackground(Color.BLACK);
         b1.setForeground(Color.WHITE);
         contentPane.add(b1);
@@ -153,7 +153,7 @@ public class UpdateRoom extends JFrame {
 
             }
         });
-        btnUpdate.setBounds(60, 355, 89, 23);
+        btnUpdate.setBounds(60, 280, 89, 23);
         btnUpdate.setBackground(Color.BLACK);
         btnUpdate.setForeground(Color.WHITE);
         contentPane.add(btnUpdate);
@@ -165,7 +165,7 @@ public class UpdateRoom extends JFrame {
                 setVisible(false);
             }
         });
-        btnExit.setBounds(180, 355, 89, 23);
+        btnExit.setBounds(180, 280, 89, 23);
         btnExit.setBackground(Color.BLACK);
         btnExit.setForeground(Color.WHITE);
         contentPane.add(btnExit);

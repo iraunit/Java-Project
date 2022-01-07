@@ -48,11 +48,11 @@ public class CheckOut extends JFrame {
         setContentPane(contentPane);
         contentPane.setLayout(null);
 
-        ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource(""));
+        ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource("HotelManagement/src/icons/checkout.jpg"));
         Image i3 = i1.getImage().getScaledInstance(400, 225,Image.SCALE_DEFAULT);
         ImageIcon i2 = new ImageIcon(i3);
         JLabel l1 = new JLabel(i2);
-        l1.setBounds(300,0,500,225);
+        l1.setBounds(300,20,500,225);
         add(l1);
 
         JLabel lblCheckOut = new JLabel("Check Out ");

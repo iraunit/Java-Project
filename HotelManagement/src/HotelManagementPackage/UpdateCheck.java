@@ -48,7 +48,7 @@ public class UpdateCheck extends JFrame {
     public UpdateCheck() throws SQLException {
         //conn = Javaconnect.getDBConnection();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setBounds(500, 200, 950, 500);
+        setBounds(500, 200, 990, 490);
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         setContentPane(contentPane);
@@ -59,9 +59,11 @@ public class UpdateCheck extends JFrame {
         lblUpdateCheckStatus.setBounds(124, 11, 222, 25);
         contentPane.add(lblUpdateCheckStatus);
 
-        ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource(""));
-        JLabel l1 = new JLabel(i1);
-        l1.setBounds(450,70,476,270);
+        ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource("HotelManagement/src/icons/checking.jpg"));
+        Image i3 = i1.getImage().getScaledInstance(550, 400,Image.SCALE_DEFAULT);
+        ImageIcon i2 = new ImageIcon(i3);
+        JLabel l1 = new JLabel(i2);
+        l1.setBounds(400,30,550,400);
         add(l1);
 
         JLabel lblNewLabel = new JLabel("ID:");
