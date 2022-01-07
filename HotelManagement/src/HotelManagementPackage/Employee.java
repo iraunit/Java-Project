@@ -52,36 +52,14 @@ public class Employee extends JFrame {
 
         //conn = Javaconnect.getDBConnection();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setBounds(430, 200, 1000, 600);
+        setBounds(300, 100, 1000, 600);
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         setContentPane(contentPane);
         contentPane.setLayout(null);
 
-//        table = new JTable();
-//        table.setBounds(0, 34, 1000, 450);
-//        contentPane.add(table);
         loaddata(contentPane);
-        JButton btnLoadData = new JButton("Load Data");
-        btnLoadData.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                try{
-//                    Database d = new Database();
-//                    String displayCustomersql = "select * from Employee";
-//                    ResultSet rs = d.s.executeQuery(displayCustomersql);
-//                    table.setModel(DbUtils.resultSetToTableModel(rs));
-                    loaddata(contentPane);
-                }
-                catch(Exception e1){
-                    e1.printStackTrace();
-                }
-            }
 
-        });
-        btnLoadData.setBounds(350, 500, 120, 30);
-        btnLoadData.setBackground(Color.BLACK);
-        btnLoadData.setForeground(Color.WHITE);
-//        contentPane.add(btnLoadData);
 
         JButton btnExit = new JButton("Back");
         btnExit.addActionListener(new ActionListener() {

@@ -9,32 +9,10 @@ public class DashBoard extends JFrame implements ActionListener {
 
     private JFrame frame;
     DashBoard(){
-////        setSize(500,500);
-//        setTitle("Hotel Management by Raunit Verma");
-//        setBounds(200,100,500,500);
-//
-//        ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("HotelManagement/src/icons/hotel.jpg"));
-//        JLabel l1=new JLabel(i1);
-////        l1.setBounds(0,0,500,500);
-//        add(l1);
-//        JButton reception = new JButton("Reception");
-//        add(reception);
-//        reception.setBounds(100,100,300,30);
-//        setLayout(null);
-//        setBounds(0,0,1000,1000);
-//        setVisible(true);
-//        reception.addActionListener((ActionListener)this );
-//        JButton addrooms = new JButton("Add Rooms");
-//        add(addrooms);
-//        addrooms.setBounds(420,100,300,30);
-//        addrooms.addActionListener((ActionListener)this );
-//        JButton Employee = new JButton("Add Employee");
-//        add(Employee);
-//        Employee.setBounds(420,140,300,30);
-//        Employee.addActionListener((ActionListener)this );
+
 
         frame = new JFrame();
-        frame.setBounds(100, 100, 1037, 637);
+        frame.setBounds(300, 100, 1037, 637);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(null);
         frame.setTitle("Welcome To RV Group Of Hotels");
@@ -90,7 +68,7 @@ public class DashBoard extends JFrame implements ActionListener {
         }
         else if(e.getActionCommand()=="Reception"){
             new ReceptionHome();
-            setVisible(false);
+            frame.setVisible(false);
         }
         else if(e.getActionCommand()=="Add Rooms"){
             new AddRooms();

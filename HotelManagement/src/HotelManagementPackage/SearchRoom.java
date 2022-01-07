@@ -45,7 +45,6 @@ public class SearchRoom extends JFrame {
      * @throws SQLException
      */
     public SearchRoom() throws SQLException {
-        //conn = Javaconnect.getDBConnection();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(530, 200, 700, 500);
         contentPane = new JPanel();

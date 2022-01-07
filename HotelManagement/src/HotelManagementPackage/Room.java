@@ -39,19 +39,18 @@ public class Room extends JFrame implements ActionListener{
 
 
     public Room() throws SQLException {
-        //conn = Javaconnect.getDBConnection();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setBounds(450, 200, 1040, 500);
+        setBounds(250, 200, 1200, 550);
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         setContentPane(contentPane);
         contentPane.setLayout(null);
 
         ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource("HotelManagement/src/icons/room.jpg"));
-        Image i3 = i1.getImage().getScaledInstance(500, 400,Image.SCALE_DEFAULT);
+        Image i3 = i1.getImage().getScaledInstance(650, 400,Image.SCALE_DEFAULT);
         ImageIcon i2 = new ImageIcon(i3);
         JLabel l1 = new JLabel(i2);
-        l1.setBounds(520,0,500,500);
+        l1.setBounds(520,10,650,500);
         add(l1);
 
         loadData(contentPane);
@@ -59,27 +58,6 @@ public class Room extends JFrame implements ActionListener{
         table.setBounds(0, 40, 500, 400);
         contentPane.add(table);
 
-        JButton btnLoadData = new JButton("Load Data");
-        btnLoadData.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                try{
-//                    Database d = new Database();
-//                    String displayCustomersql = "select * from Room";
-//                    //PreparedStatement pst = conn.prepareStatement(displayCustomersql);
-//                    ResultSet rs = d.s.executeQuery(displayCustomersql);
-//                    table.setModel(DbUtils.resultSetToTableModel(rs));
-
-
-                }
-                catch(Exception e1){
-                    e1.printStackTrace();
-                }
-            }
-        });
-        btnLoadData.setBounds(100, 470, 120, 30);
-        btnLoadData.setBackground(Color.BLACK);
-        btnLoadData.setForeground(Color.WHITE);
-//        contentPane.add(btnLoadData);
 
         JButton btnNewButton = new JButton("Back");
         btnNewButton.addActionListener(new ActionListener() {
@@ -88,7 +66,7 @@ public class Room extends JFrame implements ActionListener{
                 setVisible(false);
             }
         });
-        btnNewButton.setBounds(290, 470, 120, 30);
+        btnNewButton.setBounds(100, 470, 120, 30);
         btnNewButton.setBackground(Color.BLACK);
         btnNewButton.setForeground(Color.WHITE);
         contentPane.add(btnNewButton);
@@ -130,7 +108,6 @@ public class Room extends JFrame implements ActionListener{
             contentPane.add(table);
             Database d = new Database();
             String displayCustomersql = "select * from Room";
-//            PreparedStatement pst = conn.prepareStatement(displayCustomersql);
             ResultSet rs = d.s.executeQuery(displayCustomersql);
             table.setModel(DbUtils.resultSetToTableModel(rs));
 

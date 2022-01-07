@@ -12,7 +12,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class CustomerInfo extends JFrame {
-    Database conn = null;
     public JPanel contentPane;
     private JLabel lblId;
     private JLabel lblNewLabel;
@@ -47,14 +46,13 @@ public class CustomerInfo extends JFrame {
      * @throws SQLException
      */
     public CustomerInfo() throws SQLException {
-        //conn = Javaconnect.getDBConnection();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setBounds(530, 200, 900, 600);
+        setBounds(400, 150, 900, 600);
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         setContentPane(contentPane);
         contentPane.setLayout(null);
-
+        setTitle("Customer Info");
 
         JButton btnExit = new JButton("Back");
         btnExit.addActionListener(new ActionListener() {
@@ -89,7 +87,6 @@ public class CustomerInfo extends JFrame {
         btnLoadData.setBounds(300, 510, 120, 30);
         btnLoadData.setBackground(Color.BLACK);
         btnLoadData.setForeground(Color.WHITE);
-//        contentPane.add(btnLoadData);
 
         lblId = new JLabel("ID");
         lblId.setBounds(31, 11, 46, 14);
@@ -134,9 +131,6 @@ public class CustomerInfo extends JFrame {
     public void loadData(JPanel contentPane,JTable table){
 
         try{
-//            table = new JTable();
-////            table.setBounds(0, 40, 500, 400);
-//            contentPane.add(table);
             Database c  = new Database();
 
             String displayCustomersql = "select * from Customer";

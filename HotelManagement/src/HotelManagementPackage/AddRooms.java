@@ -12,13 +12,14 @@ public class AddRooms extends JFrame implements ActionListener {
     JButton b1,b2;
     Choice c1;
     AddRooms(){
+        setTitle("Add Rooms");
         setBounds(450, 200, 1000, 450);
         contentPane = new JPanel();
         setContentPane(contentPane);
         contentPane.setLayout(null);
         setVisible(true);
         JLabel l10 = new JLabel("Add Rooms");
-        l10.setFont(new Font("Tahoma", Font.BOLD, 18));
+        l10.setFont(new Font("Georgia", Font.BOLD, 18));
         l10.setBounds(194, 10, 120, 22);
         contentPane.add(l10);
 
@@ -31,8 +32,8 @@ public class AddRooms extends JFrame implements ActionListener {
 
         JLabel l1 = new JLabel("Room Number");
         l1.setForeground(new Color(25, 25, 112));
-        l1.setFont(new Font("Tahoma", Font.BOLD, 14));
-        l1.setBounds(64, 70, 102, 22);
+        l1.setFont(new Font("Georgia", Font.BOLD, 14));
+        l1.setBounds(64, 70, 202, 22);
         contentPane.add(l1);
 
 
@@ -43,7 +44,7 @@ public class AddRooms extends JFrame implements ActionListener {
 
         JLabel l2 = new JLabel("Availability");
         l2.setForeground(new Color(25, 25, 112));
-        l2.setFont(new Font("Tahoma", Font.BOLD, 14));
+        l2.setFont(new Font("Georgia", Font.BOLD, 14));
         l2.setBounds(64, 110, 102, 22);
         contentPane.add(l2);
 
@@ -52,9 +53,9 @@ public class AddRooms extends JFrame implements ActionListener {
         contentPane.add(comboBox);
 
 
-        JLabel l3 = new JLabel("Cleaning Status");
+        JLabel l3 = new JLabel("Status");
         l3.setForeground(new Color(25, 25, 112));
-        l3.setFont(new Font("Tahoma", Font.BOLD, 14));
+        l3.setFont(new Font("Georgia", Font.BOLD, 14));
         l3.setBounds(64, 150, 102, 22);
         contentPane.add(l3);
 
@@ -64,7 +65,7 @@ public class AddRooms extends JFrame implements ActionListener {
 
         JLabel l4 = new JLabel("Price");
         l4.setForeground(new Color(25, 25, 112));
-        l4.setFont(new Font("Tahoma", Font.BOLD, 14));
+        l4.setFont(new Font("Georgia", Font.BOLD, 14));
         l4.setBounds(64, 190, 102, 22);
         contentPane.add(l4);
 
@@ -74,7 +75,7 @@ public class AddRooms extends JFrame implements ActionListener {
 
         JLabel l5 = new JLabel("Bed Type");
         l5.setForeground(new Color(25, 25, 112));
-        l5.setFont(new Font("Tahoma", Font.BOLD, 14));
+        l5.setFont(new Font("Georgia", Font.BOLD, 14));
         l5.setBounds(64, 230, 102, 22);
         contentPane.add(l5);
 

@@ -45,12 +45,8 @@ public class Manager extends JFrame {
     {
         this.dispose();
     }
-//    /**
-//     * Create the frame.
-//     * @throws SQLException
-//     */
+
     public Manager() throws SQLException {
-        //conn = Javaconnect.getDBConnection();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(430, 200, 1000, 600);
         contentPane = new JPanel();
@@ -136,7 +132,6 @@ public class Manager extends JFrame {
             contentPane.add(table);
             Database d = new Database();
             String displayCustomersql = "select * from Employee";
-//            PreparedStatement pst = conn.prepareStatement(displayCustomersql);
             ResultSet rs = d.s.executeQuery(displayCustomersql);
             table.setModel(DbUtils.resultSetToTableModel(rs));
 

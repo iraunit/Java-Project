@@ -48,7 +48,7 @@ public class NewCustomer extends JFrame {
         add(l1);
 
         JLabel lblName = new JLabel("NEW CUSTOMER FORM");
-        lblName.setFont(new Font("Yu Mincho", Font.PLAIN, 20));
+        lblName.setFont(new Font("Gerogia", Font.PLAIN, 20));
         lblName.setBounds(118, 11, 260, 53);
         contentPane.add(lblName);
 

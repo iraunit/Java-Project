@@ -17,7 +17,7 @@ public class ReceptionHome extends JFrame implements ActionListener {
     public ReceptionHome(){
 
 
-        setBounds(530, 200, 1000, 470);
+        setBounds(350, 200, 1000, 470);
         contentPane = new JPanel();
         setContentPane(contentPane);
         contentPane.setLayout(null);

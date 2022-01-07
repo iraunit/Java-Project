@@ -11,7 +11,7 @@ import java.util.Calendar;
 public class RvAddEmployee extends JFrame{ //Third Frame
 
 
-    JTextField textField,textField_1,textField_2,textField_3,textField_4,textField_5,textField_6;
+    JTextField textField,textField_1,textField_3,textField_4,textField_5,textField_6;
     JComboBox c1;
 
     public RvAddEmployee(){
@@ -19,12 +19,6 @@ public class RvAddEmployee extends JFrame{ //Third Frame
         getContentPane().setBackground(Color.WHITE);
         setTitle("ADD EMPLOYEE DETAILS");
 
-//        ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource("HotelManagement/src/icons/customer.jpg"));
-//        Image i3 = i1.getImage().getScaledInstance(500, 400,Image.SCALE_DEFAULT);
-//        ImageIcon i2 = new ImageIcon(i3);
-//        JLabel l1 = new JLabel(i2);
-//        l1.setBounds(480,10,300,500);
-//        add(l1);
 
         setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         setSize(778,486);
@@ -172,7 +166,7 @@ public class RvAddEmployee extends JFrame{ //Third Frame
 
         setSize(900,600);
         setVisible(true);
-        setLocation(530,200);
+        setLocation(250,200);
 
     }
 

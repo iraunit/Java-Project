@@ -26,20 +26,25 @@ public class Login extends JFrame implements ActionListener{
 	t1.setBounds(100,45,100,20);
 	t1.setVisible(true);
 	add(t1);
-	
+		ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource("HotelManagement/src/icons/download.png"));
+//		Image i3 = i1.getImage().getScaledInstance(400, 225,Image.SCALE_DEFAULT);
+//		ImageIcon i2 = new ImageIcon(i3);
+		JLabel l1 = new JLabel(i1);
+		l1.setBounds(150,0,500,225);
+		add(l1);
 	t2=new JPasswordField();
 	t2.setBounds(100,85,100,20);
 	t2.setVisible(true);
 	add(t2);
 	
 	b1=new JButton("Cancel");
-	b1.setBounds(100,110,80,30);
+	b1.setBounds(100,150,80,30);
 	add(b1);
 	b2=new JButton("Login");
-	b2.setBounds(200,110,80,30);
+	b2.setBounds(200,150,80,30);
 	add(b2);
 	b1.addActionListener((ActionListener) this);
-		setBounds(500,300,300,200);
+		setBounds(600,300,540,250);
 		setVisible(true);
 		setTitle("Login To the System");
 		b2.addActionListener((ActionListener) this);

@@ -5,13 +5,10 @@ import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class CheckOut extends JFrame {
-    Database conn = null;
-    PreparedStatement pst = null;
     private JPanel contentPane;
     private JTextField t1;
     Choice c1;
@@ -40,14 +37,13 @@ public class CheckOut extends JFrame {
      * @throws SQLException
      */
     public CheckOut() throws SQLException {
-        //conn = Javaconnect.getDBConnection();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setBounds(530, 200, 800, 294);
+        setBounds(450, 200, 800, 294);
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         setContentPane(contentPane);
         contentPane.setLayout(null);
-
+        setTitle("CheckOut");
         ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource("HotelManagement/src/icons/checkout.jpg"));
         Image i3 = i1.getImage().getScaledInstance(400, 225,Image.SCALE_DEFAULT);
         ImageIcon i2 = new ImageIcon(i3);
@@ -56,7 +52,7 @@ public class CheckOut extends JFrame {
         add(l1);
 
         JLabel lblCheckOut = new JLabel("Check Out ");
-        lblCheckOut.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        lblCheckOut.setFont(new Font("Georgia", Font.PLAIN, 20));
         lblCheckOut.setBounds(70, 11, 140, 35);
         contentPane.add(lblCheckOut);
 
@@ -108,12 +104,6 @@ public class CheckOut extends JFrame {
         t1 = new JTextField();
         t1.setBounds(130, 132, 150, 20);
         contentPane.add(t1);
-
-
-
-
-
-
 
         JButton btnCheckOut = new JButton("Check Out");
         btnCheckOut.addActionListener(new ActionListener() {

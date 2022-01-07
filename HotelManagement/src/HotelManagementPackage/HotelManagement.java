@@ -8,7 +8,6 @@ public class HotelManagement extends JFrame implements ActionListener{
 	HotelManagement(){
 		setBounds(400,200,800,500);
 		setTitle("Hotel Management");
-//		setLocation(0,0);
 		ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("HotelManagement/src/icons/hotel.jpg"));
 		JLabel l1=new JLabel(i1);
 		l1.setBounds(0,0,800,500);
